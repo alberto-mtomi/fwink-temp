@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  /* Forge neutral palette — warm slate */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --gray-950: #030712;
+
+  /* Brand — deep indigo core */
+  --forge-50: #eef2ff;
+  --forge-100: #e0e7ff;
+  --forge-200: #c7d2fe;
+  --forge-300: #a5b4fc;
+  --forge-400: #818cf8;
+  --forge-500: #6366f1;
+  --forge-600: #4f46e5;
+  --forge-700: #4338ca;
+  --forge-800: #3730a3;
+  --forge-900: #312e81;
+
+  /* Semantic */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+
+  --background: #ffffff;
+  --foreground: var(--gray-900);
+  --muted: var(--gray-500);
+  --border: var(--gray-200);
+  --surface: var(--gray-50);
+  --sidebar-bg: var(--gray-950);
+  --sidebar-fg: var(--gray-300);
+  --sidebar-active: #ffffff;
+
+  --radius: 8px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-surface: var(--surface);
+
+  --color-forge-50: var(--forge-50);
+  --color-forge-100: var(--forge-100);
+  --color-forge-200: var(--forge-200);
+  --color-forge-300: var(--forge-300);
+  --color-forge-400: var(--forge-400);
+  --color-forge-500: var(--forge-500);
+  --color-forge-600: var(--forge-600);
+  --color-forge-700: var(--forge-700);
+  --color-forge-800: var(--forge-800);
+  --color-forge-900: var(--forge-900);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --color-info: var(--info);
+
+  --color-sidebar-bg: var(--sidebar-bg);
+  --color-sidebar-fg: var(--sidebar-fg);
+  --color-sidebar-active: var(--sidebar-active);
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+/* Base resets */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-300);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-400);
+}
