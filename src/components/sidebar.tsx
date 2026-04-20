@@ -36,7 +36,7 @@ export function Sidebar() {
           <Flame className="h-4 w-4 text-white" />
         </div>
         <span className="text-[15px] font-semibold tracking-tight text-sidebar-active">
-          Forge
+          FWINK
         </span>
       </div>
 

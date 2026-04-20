@@ -3,7 +3,7 @@ import { Sidebar } from "@/components/sidebar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Forge — Manufacturing Agent Platform",
+  title: "FWINK — Manufacturing Agent Platform",
   description:
     "Match industrial designers with manufacturing contractors. Upload deliverables, extract scope, send RFQs, and compare quotes.",
 };
